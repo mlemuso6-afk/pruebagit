@@ -147,40 +147,7 @@ void buscar_codigo(){
 	
 	fclose(archivo);
 }
-/*void buscar_codigo(){
-	
-	FILE* archivo = fopen(nombre_archivo, "rb");
-	
-	int indice=0,pos=0,cod=0;
-	cout<<"BUSCAR CODIGO: ";
-	cin>>cod;
-	Estudiante estudiante;
-	
-	fread ( &estudiante, sizeof(Estudiante), 1, archivo );
-		
-		do{
-			
-			if (estudiante.codigo == cod){
-			pos = indice;
-			}
-	
-		fread ( &estudiante, sizeof(Estudiante), 1, archivo );
-		indice += 1;
-		} while (feof( archivo ) == 0);
-		
-	cout<<"------------------ "<<pos<<" ------------------"<<endl;
-	fseek ( archivo,pos * sizeof(Estudiante), SEEK_SET );
-    fread ( &estudiante, sizeof( Estudiante ), 1, archivo );
-    	cout << "Codigo: " << estudiante.codigo << endl;
-        cout << "Nombre: " << estudiante.nombre << endl;
-        cout << "Apellido: " << estudiante.apellido << endl;
-        cout << "Telefono: " << estudiante.telefono << endl;
-        cout << endl;
-	
-	fclose(archivo);
-	system("PAUSE");
-}
-*/
+
 
 void buscar_indice(){
 	FILE* archivo = fopen(nombre_archivo, "rb");
